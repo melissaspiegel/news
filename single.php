@@ -172,7 +172,7 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
        
         <?php
 		if (get_field("listImg") != "" ) { ?>
-        <img data-original="<?php the_field("listImg") ?>" width="100%" height="111" class="img-responsive"  alt="<?php the_title(); ?>"/>
+        <img src="<?php the_field("listImg") ?>" width="100%" height="111" class="img-responsive"  alt="<?php the_title(); ?>"/>
         <?php } ?>
          <?php if($post->post_type == 'spotlights'){ ?>
 			 <h2 class="entry-title title-post spotlights">
@@ -213,8 +213,12 @@ wp_reset_postdata();?>
  <div style="background-color:rgb(233, 233, 233);padding-bottom:28px;">
 <div class="container">
 <?php get_footer(); ?>
+
 <script>
-select = document.getElementById("#bibMenu");
-select.onload= function(){
-	alert(this.options[this.selectedIndex].text);
-};</script>
+//select = document.getElementById("#bibMenu");
+//select.onload= function(){
+//	alert(this.options[this.selectedIndex].text);
+//	
+//};
+//
+</script>

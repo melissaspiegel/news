@@ -64,7 +64,7 @@ wp_nav_menu( $defaults );
 
                                 <!--only on mobile --> 
                                  <div class="col-xs-6 hidden-sm hidden-md hidden-lg">
-                                    <div class=" pull-right clearfix"><?php get_search_form('true'); ?></div>
+                                    <div class=" pull-right clearfix "><?php get_search_form('true'); ?></div>
                                  </div>
                                 <!--only on mobile ENDS -->  
  

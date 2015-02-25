@@ -586,7 +586,9 @@ h1 {
 	color: #111;
 }
 #search {
-	background: url(images/searchIcon.jpg) no-repeat scroll 0px 5px;
+	background-image:url(images/searchIcon.jpg);
+	background-position:0px 4px;
+	background-repeat:no-repeat;
 	padding-left: 30px;
 }
 #subBtn {
@@ -1239,7 +1241,7 @@ button#dropdownMenu1 {
 	font-size: 12pt;
 }
 /*SRPITE*/
-.biblioHeader, .or_cog-25, .or_check-25, .bilbioTechIcon, .event, .or_check-25, .or_star-25,  .or_eye-25, .or_life-25, .or_pin-25, .or_sun-25, .or_thumb-25, .si_facebook, .si_facebookBlue, .si_instagram, .si_instagramBlue, .si_twitter, .si_twitterBlue,  .info, .update {
+.biblioHeader, .or_cog-25, .or_check-25, .bilbioTechIcon, .event, .or_check-25, .or_star-25,  .or_eye-25, .or_life-25, .or_pin-25, .or_sun-25, .or_thumb-25, .si_facebook, .si_facebookBlue, .si_instagram, .si_instagramBlue, .si_twitter, .si_twitterBlue,  .info, .update, .searchIcon {
 	background: url(images/sprites.png) no-repeat;
 }
 .biblioHeader {
@@ -1344,8 +1346,16 @@ button#dropdownMenu1 {
 	width: 27px;
 	height: 26px;
 }
+.searchIcon{
+	background-position: -211px -125px ;
+	width: 26px;
+	height: 26px;
 
+	
+}
 /*SPRINT ENDS*/
+
+
 .col-centered {
 	float: none;
 	margin: 0 auto;
