@@ -473,4 +473,22 @@ function remove_scripts(){
 	wp_deregister_script('underscore');
 	wp_deregister_script('lib-hours');
 }
-add_action( 'wp_enqueue_scripts', 'remove_scripts', 100 ); ?>
+add_action( 'wp_enqueue_scripts', 'remove_scripts', 100 ); 
+
+//new admin ui page for whats in the news?
+add_action( 'admin_menu', 'register_my_custom_menu_page' );
+
+function register_my_custom_menu_page(){
+	add_menu_page( 'custom menu title', 'custom menu', 'manage_options', 'custompage', 'my_custom_menu_page', plugins_url( 'myplugin/images/icon.png' ), 6 ); 
+}
+
+function my_custom_menu_page(){
+	
+echo "hello";
+	
+}
+
+
+
+
+?>
